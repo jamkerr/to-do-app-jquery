@@ -6,6 +6,9 @@ function newItem() {
     list.append(li);
 
     //2. Crossing out an item from the list of items:
+    li.on('click', function() {
+        li.addClass('strike')
+    });
 
     //3(i). Adding the delete button "X": 
 
