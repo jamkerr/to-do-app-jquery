@@ -3,7 +3,12 @@ function newItem() {
     let list = $('#list');
     let inputValue = $('#input').val();
     let li = $(`<li>${inputValue}</li>`);
-    list.append(li);
+    if (inputValue === '') {
+        alert("Write some text");
+      } else {
+        list.append(li);
+      }
+    
 
     //2. Crossing out an item from the list of items:
     li.on('click', function() {
