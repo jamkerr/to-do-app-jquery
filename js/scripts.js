@@ -1,4 +1,10 @@
+// Prevent default form submission on enter that refreshes the page
+$('form').on('submit', function (event) {
+    event.preventDefault();
+});
+
 function newItem() {
+
     //1. Adding a new item to the list of items: 
     let list = $('#list');
     let inputValue = $('#input').val();
